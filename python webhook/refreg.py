@@ -3,14 +3,14 @@ import requests
 
 def recovery_token():
 
-    client_id = "69439ee6-8449-45e6-b299-c6b5a0520d25"
-    client_secret = "EpoJ6fERvthiaHpqY8GSqcYeWz0YwmucvZ9EE5mtkqBjlN8p6WkLPZPqnzcNqjTi"
-    subdomain = "fortunaperm"
+    client_id = ""
+    client_secret = ""
+    subdomain = ""
     redirect_url = "https://aktivkredit.ru/"
     with open('./refresh_token.txt', 'r') as access:
         refresh_token = access.read()
         access.close()
-    url = f'https://fortunaperm.amocrm.ru/oauth2/access_token'
+    url = f'https://{subdomain}.amocrm.ru/oauth2/access_token'
     params = {
         "client_id": client_id,
         "client_secret": client_secret,
