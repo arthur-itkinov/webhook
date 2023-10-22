@@ -3,8 +3,8 @@ import requests
 
 def recovery_token():
 
-    client_id="77a1115c-52be-4145-9c98-e841be5d6eb8",
-    client_secret="sNrYtFxlYeMpZYuOJbMxavQijiLeHWeTxjozAGm3RGgZ6FoO2Bk1RZhqHZe7gew9",
+    client_id="",
+    client_secret="",
     subdomain = "8250"
     redirect_url = "https://aktivkredit.ru/"
     with open('./refresh_token.txt', 'r') as access:
